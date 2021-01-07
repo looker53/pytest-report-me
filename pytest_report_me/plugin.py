@@ -34,7 +34,7 @@ def pytest_sessionfinish(session):
     reports["summary"]["end_ts"] = ts.timestamp()
 
     template_dir = Path(__file__).resolve().parent / 'templates'
-    loader = jinja2.FileSystemLoader(template_dir)
+    loader = jinja2.FileSystemLoader(str(template_dir))
     env = jinja2.Environment(loader=loader)
     template = env.get_template('templates.html')
     report = template.render(result=reports)

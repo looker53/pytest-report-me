@@ -11,6 +11,7 @@ def read(fname):
 setup(
     name='pytest-report-me',
     author='Yuz Wang',
+    version="0.0.4",
     author_email='looker53@sina.com',
     maintainer='Yuz Wang',
     maintainer_email='looker53@sina.com',
@@ -25,7 +26,6 @@ setup(
         'jinja2'
     ],
     classifiers=[
-        'Development Status :: 1 - Beta',
         'Framework :: Pytest',
         'Intended Audience :: Developers',
         'Topic :: Software Development :: Testing',
